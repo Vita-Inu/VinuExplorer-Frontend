@@ -51,5 +51,9 @@ const TEMPLATE_MAP: Record<Route['pathname'], string> = {
 export function make(pathname: Route['pathname']) {
   const template = TEMPLATE_MAP[pathname];
 
-  return `%network_name% ${ template }`;
+  if (pathname === '/') {
+    return 'VinuExplorer - The official block explorer for VinuChain';
+  }
+
+  return `%network_name% ${ template } | VinuExplorer`;
 }
