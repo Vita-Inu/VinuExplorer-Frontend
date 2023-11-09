@@ -30,7 +30,7 @@ const Home = () => {
             fontWeight={ 600 }
             color={ config.UI.homepage.plate.textColor }
           >
-            Welcome to { config.chain.name } explorer
+            Welcome to the official explorer for VinuChain, VinuExplorer
           </Heading>
           <Box display={{ base: 'none', lg: 'block' }}>
             { config.features.account.isEnabled && <ProfileMenuDesktop/> }
