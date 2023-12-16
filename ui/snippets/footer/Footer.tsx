@@ -7,6 +7,8 @@ import type { CustomLinksGroup } from 'types/footerLinks';
 import config from 'configs/app';
 import discordIcon from 'icons/social/discord.svg';
 import gitIcon from 'icons/social/git.svg';
+import mediumIcon from 'icons/social/medium_filled.svg';
+import telegramIcon from 'icons/social/telegram_filled.svg';
 import twitterIcon from 'icons/social/tweet.svg';
 import type { ResourceError } from 'lib/api/resources';
 import useFetch from 'lib/hooks/useFetch';
@@ -37,6 +39,18 @@ const Footer = () => {
       iconSize: '18px',
       text: 'Discord',
       url: 'https://discord.gg/vinu',
+    },
+    {
+      icon: telegramIcon,
+      iconSize: '18px',
+      text: 'Telegram',
+      url: 'https://t.me/vitainu',
+    },
+    {
+      icon: mediumIcon,
+      iconSize: '18px',
+      text: 'Medium',
+      url: 'https://medium.com/vinuchain',
     },
   ];
 
